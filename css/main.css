@@ -50,6 +50,42 @@ a:visited {
 }
 
 /* ########################################################################## */
+/* Common components */
+/* ########################################################################## */
+
+.sectionHeading {
+	margin-bottom: 1.5rem;
+	color: #292929;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/*
+	MQ: Larger phones / Medium phones landscape orientation
+*/
+
+/* 400 / 16 = 25 */
+@media (min-width: 25rem) {
+	.sectionHeading {
+		/* 30 / 16 = 1.875 */
+		font-size: 1.875rem;
+	}
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.sectionHeading {
+		margin-bottom: 3rem;
+		/* 36 / 16 = 2.25 */
+		font-size: 2.25rem;
+	}
+}
+
+/* ########################################################################## */
 /* Sections */
 /* ########################################################################## */
 
