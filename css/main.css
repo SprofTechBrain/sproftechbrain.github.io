@@ -66,6 +66,10 @@ a {
 	text-align: center;
 }
 
+.sectionHeading-white {
+	color: #fff;
+}
+
 .subHeading {
 	/* 6 / 16 = 0.375 */
 	margin-bottom: 0.375rem;
@@ -328,4 +332,43 @@ a {
 	}
 }
 
+/* -------------------------------------------------------------------------- */
+/* Clients section */
+/* -------------------------------------------------------------------------- */
 
+.section-clients {
+	color: #fff;
+	background: #3a93c9;
+	background: linear-gradient(to right, #3a93c9, #3cc6b5);
+}
+
+.section-clients-list {
+	list-style: none;
+	text-align: center;
+}
+
+.section-clients-list li {
+	margin: 1.5rem;
+}
+
+.section-clients-list img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.section-clients-list li {
+		display: inline;
+		margin: 0;
+	}
+
+	.section-clients-list img {
+		display: inline-block;
+		margin: 1.5rem;
+	}
+}
