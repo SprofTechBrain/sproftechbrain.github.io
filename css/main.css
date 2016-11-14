@@ -55,6 +55,10 @@ a {
 	color: #3a93c9;
 }
 
+address {
+	font-style: normal;
+}
+
 /* ########################################################################## */
 /* Common components */
 /* ########################################################################## */
@@ -356,6 +360,56 @@ a {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Footer section */
+/* -------------------------------------------------------------------------- */
+
+.section-footer {
+	color: #777;
+	background: #1d1d1d;
+	text-align: center;
+}
+
+.section-footer hr {
+	display: none;
+}
+
+.section-footer a {
+	color: #888;
+	text-decoration: none;
+}
+
+.section-footer a:hover {
+	color: #aaa;
+}
+
+.section-footer-logo {
+	display: block;
+	width: 140px;
+	height: 77px;
+	overflow: hidden;
+	margin: 0 auto 0.75rem;
+	background: url("/images/techbrain-logo-white.png") no-repeat;
+	text-indent: -9999px;
+}
+
+.section-footer address {
+	margin-top: 1.5rem;
+	/* 13 / 16 = 0.8125 */
+	font-size: 0.8125rem;
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.section-footer address {
+		margin-top: 3rem;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
 /* Services section */
 /* -------------------------------------------------------------------------- */
 
@@ -519,7 +573,6 @@ a {
 /* -------------------------------------------------------------------------- */
 /* Contact section */
 /* -------------------------------------------------------------------------- */
-
 
 .section-contact-content {
 	max-width: 35rem;
