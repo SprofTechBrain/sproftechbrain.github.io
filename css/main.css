@@ -515,3 +515,28 @@ a {
 	background: url("/images/bg/technologies/600w.jpg") no-repeat center center;
 	background-size: cover;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Contact section */
+/* -------------------------------------------------------------------------- */
+
+
+.section-contact-content {
+	max-width: 35rem;
+	margin: 0 auto 3rem;
+}
+
+.section-contact-cta {
+	text-align: center;
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.section-contact-content {
+		text-align: center;
+	}
+}
