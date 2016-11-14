@@ -71,6 +71,13 @@ a {
 	color: #fff;
 }
 
+.sectionHeading-shadow {
+	text-shadow:
+			0 0.04em 1em hsla(215, 100%, 10%, 0.6),
+			0 0.04em 0.3em hsla(215, 100%, 10%, 0.3),
+			0 1px 1px hsla(0, 0%, 0%, 0.1);
+}
+
 .subHeading {
 	/* 6 / 16 = 0.375 */
 	margin-bottom: 0.375rem;
@@ -142,6 +149,20 @@ a {
 	background-position: -47px -148px;
 }
 
+.imageList {
+	list-style: none;
+	text-align: center;
+}
+
+.imageList li {
+	margin: 1.5rem;
+}
+
+.imageList img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
 /*
 	MQ: Larger phones / Medium phones landscape orientation
 */
@@ -178,6 +199,32 @@ a {
 		/* 12 / 16 = 0.75 */
 		margin-bottom: 0.75rem;
 		font-size: 1.25rem;
+	}
+
+	.imageList li {
+		display: inline;
+		margin: 0;
+	}
+
+	.imageList img {
+		display: inline-block;
+		margin: 1.5rem;
+	}
+}
+
+/*
+	MQ: Tiny monitors / Tablets landscape orientation
+*/
+
+/* 1000 / 16 = 62.5 */
+@media (min-width: 62.5rem) {
+	.imageList-wrapAt3 li:nth-child(3n+1)::before,
+	.imageList-wrapAt5 li:nth-child(5n+1)::before {
+		content: ' ';
+		display: block;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
 	}
 }
 
@@ -261,7 +308,7 @@ a {
 @media (min-width: 18.75rem) and (max-width: 43.6875rem) {
 	/* Make the menu items wrap to new row after 3 items. */
 	.section-header-menu li:nth-child(4)::before {
-		content: 'heeeej';
+		content: ' ';
 		display: block;
 		width: 100%;
 		height: 0;
@@ -393,37 +440,6 @@ a {
 	background: linear-gradient(to right, #3a93c9, #3cc6b5);
 }
 
-.section-clients-list {
-	list-style: none;
-	text-align: center;
-}
-
-.section-clients-list li {
-	margin: 1.5rem;
-}
-
-.section-clients-list img {
-	max-width: 100%;
-	vertical-align: middle;
-}
-
-/*
-	MQ: Tablets / Larger phones landscape orientation
-*/
-
-/* 700 / 16 = 43.75 */
-@media (min-width: 43.75rem) {
-	.section-clients-list li {
-		display: inline;
-		margin: 0;
-	}
-
-	.section-clients-list img {
-		display: inline-block;
-		margin: 1.5rem;
-	}
-}
-
 /* -------------------------------------------------------------------------- */
 /* Team section */
 /* -------------------------------------------------------------------------- */
@@ -488,4 +504,14 @@ a {
 	.section-team-person-links {
 		margin-top: 0.75rem;
 	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* Technologies section */
+/* -------------------------------------------------------------------------- */
+
+.section-technologies {
+	color: #fff;
+	background: url("/images/bg/technologies/600w.jpg") no-repeat center center;
+	background-size: cover;
 }
