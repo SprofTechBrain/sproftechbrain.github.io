@@ -5,8 +5,9 @@
 # Colors
 
 * Blue: #3a93c9
+* Blue, darker: #117db8
 * Turquoise: #3cc6b5
-
+* Turquoise, darker: #18b89d
 
 # Breakpoints
 
@@ -92,6 +93,11 @@ a {
 	text-transform: uppercase;
 }
 
+.button-cta:hover {
+	background: #0f74ab;
+	background: linear-gradient(to right, #117db8, #18b89d);
+}
+
 .button-icon {
 	padding: 0.75rem;
 	border-radius: 500px;
@@ -103,9 +109,17 @@ a {
 	background: #3a93c9;
 }
 
+.button-blue:hover {
+	background: #117db8;
+}
+
 .button-turquoise {
 	color: #fff;
 	background: #3cc6b5;
+}
+
+.button-turquoise:hover {
+	background: #18b89d;
 }
 
 .icon {
