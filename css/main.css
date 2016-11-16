@@ -319,7 +319,8 @@ address {
 	color: #fff;
 	background:
 		linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, 0.8)),
-		url("/images/bg/header/600w.jpg") no-repeat center center;
+		url("/images/bg/header/600w.jpg") no-repeat center center,
+		#1d1d1d;
 	background-size: cover;
 	text-align: center;
 }
@@ -694,7 +695,7 @@ address {
 
 .section-technologies {
 	color: #fff;
-	background: url("/images/bg/technologies/600w.jpg") no-repeat center center;
+	background: #3a93c9 url("/images/bg/technologies/600w.jpg") no-repeat center center;
 	background-size: cover;
 }
 
