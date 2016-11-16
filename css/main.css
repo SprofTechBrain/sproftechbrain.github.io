@@ -59,6 +59,18 @@ address {
 	font-style: normal;
 }
 
+/*
+	MQ: Medium monitors
+*/
+
+/* 1200 / 16 = 75 */
+@media (min-width: 75rem) {
+	html {
+		/* 17 / 16 * 100 = 106.25 */
+		font-size: 106.25%;
+	}
+}
+
 /* ########################################################################## */
 /* Common components */
 /* ########################################################################## */
@@ -112,7 +124,7 @@ address {
 .button-icon {
 	padding: 0.75rem;
 	border-radius: 999px;
-	line-height: 1;
+	line-height: 0;
 }
 
 .button-blue {
@@ -167,6 +179,11 @@ address {
 	vertical-align: middle;
 }
 
+.ctaButtonRow {
+	margin: 3rem 0 1.5rem;
+	text-align: center;
+}
+
 /*
 	MQ: Larger phones / Medium phones landscape orientation
 */
@@ -212,7 +229,11 @@ address {
 
 	.imageList img {
 		display: inline-block;
-		margin: 1.5rem;
+		margin: 0.75rem 1.5rem 2.25rem;
+	}
+
+	.ctaButtonRow {
+		margin: 4.5rem 0 0;
 	}
 }
 
@@ -232,6 +253,17 @@ address {
 	}
 }
 
+/*
+	MQ: Large monitors
+*/
+
+/* 1600 / 16 = 100 */
+@media (min-width: 100rem) {
+	.sectionHeading {
+		margin-bottom: 4.5rem;
+	}
+}
+
 /* ########################################################################## */
 /* Sections */
 /* ########################################################################## */
@@ -239,6 +271,42 @@ address {
 .section {
 	padding: 1.5rem 1.5rem; /* Fallback */
 	padding: 1.5rem 6vw;
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.section {
+		padding-top: 3.75rem;
+		padding-bottom: 3.75rem;
+	}
+}
+
+/*
+	MQ: Large monitors
+*/
+
+/* 1600 / 16 = 100 */
+@media (min-width: 100rem) {
+	.section {
+		padding-top: 4.5rem;
+		padding-bottom: 4.5rem;
+	}
+}
+
+/*
+	MQ: Huge monitors
+*/
+
+/* 2000 / 16 = 125 */
+@media (min-width: 125rem) {
+	.section {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
 }
 
 /* -------------------------------------------------------------------------- */
@@ -354,8 +422,25 @@ address {
 
 /* 1000 / 16 = 62.5 */
 @media (min-width: 62.5rem) {
+	.section-header-tagline {
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+
 	.section-header-menu li + li {
 		margin-left: 0.75rem;
+	}
+}
+
+/*
+	MQ: Large monitors
+*/
+
+/* 1600 / 16 = 100 */
+@media (min-width: 100rem) {
+	.section-header-tagline {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 }
 
@@ -409,6 +494,17 @@ address {
 	}
 }
 
+/*
+	MQ: Large monitors
+*/
+
+/* 1600 / 16 = 100 */
+@media (min-width: 100rem) {
+	.section-footer address {
+		margin-top: 4.5rem;
+	}
+}
+
 /* -------------------------------------------------------------------------- */
 /* Services section */
 /* -------------------------------------------------------------------------- */
@@ -433,11 +529,6 @@ address {
 
 .section-services-image-itConsultants {
 	background-position: -106px 0;
-}
-
-.section-services-cta {
-	margin-top: 3rem;
-	text-align: center;
 }
 
 /*
@@ -503,14 +594,16 @@ address {
 	flex-wrap: wrap;
 	justify-content: center;
 	max-width: 60rem;
-	margin: 0 auto;
+	margin: 0 auto 1.5rem;
 }
 
 .section-team-person {
-	width: 18rem;
-	max-width: 100%;
-	margin-bottom: 3rem;
+	width: 100%;
 	text-align: center;
+}
+
+.section-team-person:nth-child(1n+2) {
+	margin-top: 1.5rem;
 }
 
 .section-team-person .subHeading {
@@ -544,7 +637,16 @@ address {
 @media (min-width: 43.75rem) {
 	.section-team-person {
 		position: relative;
+		width: 18.3rem;
 		padding-top: calc(180px + 0.75rem);
+	}
+
+	.section-team-person:nth-child(1n+2) {
+		margin-top: 0;
+	}
+
+	.section-team-person:nth-child(1n+3) {
+		margin-top: 3rem;
 	}
 
 	.section-team-person-picture {
@@ -557,6 +659,32 @@ address {
 
 	.section-team-person-links {
 		margin-top: 0.75rem;
+	}
+}
+
+/*
+	MQ: Tiny monitors / Tablets landscape orientation
+*/
+
+/* 1000 / 16 = 62.5 */
+@media (min-width: 62.5rem) {
+	.section-team-person:nth-child(1n+3) {
+		margin-top: 0;
+	}
+
+	.section-team-person:nth-child(1n+4) {
+		margin-top: 3rem;
+	}
+}
+
+/*
+	MQ: Large monitors
+*/
+
+/* 1600 / 16 = 100 */
+@media (min-width: 100rem) {
+	.section-team-person:nth-child(1n+4) {
+		margin-top: 4.5rem;
 	}
 }
 
@@ -576,11 +704,7 @@ address {
 
 .section-contact-content {
 	max-width: 35rem;
-	margin: 0 auto 3rem;
-}
-
-.section-contact-cta {
-	text-align: center;
+	margin: 0 auto;
 }
 
 /*
