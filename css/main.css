@@ -43,6 +43,7 @@ but still set breakpoints where needed to make the design look good.
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 	color: #454545;
 	background: #fff;
 	/* font-size: 100% = 16px, line-height: 16px * 1.5 = 24px */
