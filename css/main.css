@@ -50,6 +50,10 @@ html {
 	font: 100%/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	/* 17 / 0.5 = 0.029412 */
 	letter-spacing: 0.029412em;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 a {
