@@ -315,6 +315,12 @@ address {
 	padding: 1.5rem 6vw;
 }
 
+.section:focus {
+	/* Safari shows an outline when the section has focus, like after a fragment
+	 link navigation. */
+	outline: 0;
+}
+
 /*
 	MQ: Tablets / Larger phones landscape orientation
 */
