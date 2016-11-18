@@ -18,9 +18,19 @@ if (
 
 				history.pushState({}, document.title, href)
 
-				document.querySelector(href).scrollIntoView({
+				var fragmentEl = document.querySelector(href);
+
+				fragmentEl.scrollIntoView({
 					behavior: 'smooth'
 				})
+
+				// The default browser fragment navigation sets the position in the
+				// sequential focus navigation order to the fragment element, so we need
+				// to recreate that behaviour.
+				var needsTabIndex = Number.isNaN(parseInt(fragmentEl.getAttribute('tabindex'), 10))
+				needsTabIndex && fragmentEl.setAttribute('tabindex', '-1')
+				fragmentEl.focus()
+				needsTabIndex && fragmentEl.removeAttribute('tabindex')
 			}
 		}
 	})
