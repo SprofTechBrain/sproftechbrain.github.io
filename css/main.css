@@ -51,7 +51,6 @@ html {
 	/* 17 / 0.5 = 0.029412 */
 	letter-spacing: 0.029412em;
 	-webkit-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
@@ -549,6 +548,8 @@ address {
 	}
 
 	.section-services-list {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 		margin: 0 auto;
 		max-width: 60rem;
@@ -556,6 +557,8 @@ address {
 
 	.section-services-service {
 		position: relative;
+		-webkit-flex: 1 33%;
+		-ms-flex: 1 33%;
 		flex: 1 33%;
 		margin: 0 1.5rem;
 		padding-top: calc(96px + 1.5rem);
@@ -596,8 +599,14 @@ address {
 /* -------------------------------------------------------------------------- */
 
 .section-team-list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	max-width: 60rem;
 	margin: 0 auto 1.5rem;
