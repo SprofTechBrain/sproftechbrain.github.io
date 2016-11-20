@@ -362,15 +362,23 @@ address {
 /* -------------------------------------------------------------------------- */
 
 .section-header {
-	overflow: hidden;
 	padding: 0;
 	color: #fff;
-	background:
-		linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, 0.8)),
-		url("/images/bg/header/600w.jpg") no-repeat center center,
-		#1d1d1d;
+	background: #1d1d1d url("/images/bg/header/narrow-700w.jpg") no-repeat center center;
 	background-size: cover;
 	text-align: center;
+}
+
+.section-header-inner {
+	overflow: hidden;
+	/* Use a separate element so we don't have to redeclare this along with the
+	responsive background image. */
+	background: linear-gradient(
+			to bottom,
+			hsla(0, 0%, 0%, 0) 40%,
+			hsla(0, 0%, 0%, 0.1) 50%,
+			hsla(0, 0%, 0%, 0.8)
+	);
 }
 
 .section-header-logo {
@@ -460,6 +468,10 @@ address {
 
 /* 700 / 16 = 43.75 */
 @media (min-width: 43.75rem) {
+	.section-header {
+		background-image: url("/images/bg/header/wide-1200w.jpg");
+	}
+
 	.section-header-logo {
 		margin-top: 1.5rem;
 	}
@@ -478,6 +490,17 @@ address {
 
 	.section-header-menu li + li {
 		margin-left: 0.75rem;
+	}
+}
+
+/*
+	MQ: Small monitors
+*/
+
+/* 1200 / 16 = 75 */
+@media (min-width: 75rem) {
+	.section-header {
+		background-image: url("/images/bg/header/very-wide-1700w.jpg");
 	}
 }
 
