@@ -776,8 +776,19 @@ address {
 
 .section-technologies {
 	color: #fff;
-	background: #3a93c9 url("/images/bg/technologies/600w.jpg") no-repeat center center;
+	background: #3a93c9 url("/images/bg/technologies/narrow-1000w.jpg") no-repeat 50% 30%;
 	background-size: cover;
+}
+
+/*
+	MQ: Tablets / Larger phones landscape orientation
+*/
+
+/* 700 / 16 = 43.75 */
+@media (min-width: 43.75rem) {
+	.section-technologies {
+		background-image: url("/images/bg/technologies/wide-1200w.jpg");
+	}
 }
 
 /* -------------------------------------------------------------------------- */
