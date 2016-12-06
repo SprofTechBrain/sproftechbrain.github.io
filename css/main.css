@@ -384,12 +384,7 @@ address {
 
 .section-header-logo {
 	display: block;
-	width: 140px;
-	height: 77px;
-	overflow: hidden;
 	margin: 0.75rem auto 1.5rem;
-	background: url("/images/techbrain-logo-white.png") no-repeat;
-	text-indent: -9999px;
 }
 
 .section-header-tagline {
@@ -542,12 +537,7 @@ address {
 
 .section-footer-logo {
 	display: block;
-	width: 140px;
-	height: 77px;
-	overflow: hidden;
 	margin: 0 auto 0.75rem;
-	background: url("/images/techbrain-logo-white.png") no-repeat;
-	text-indent: -9999px;
 }
 
 .section-footer address {
