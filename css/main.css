@@ -227,6 +227,14 @@ address {
 	text-align: center;
 }
 
+.article p {
+	margin-bottom: 1.5rem;
+}
+
+.article :last-child {
+	margin-bottom: 0;
+}
+
 /*
 	MQ: Larger phones / Medium phones landscape orientation
 */
