@@ -586,6 +586,10 @@ address {
 	background-size: 154px;
 }
 
+.section-services-image-recruitmentConsulting {
+	background-position: 0 0;
+}
+
 .section-services-image-onSite {
 	background-position: -53px 0;
 }
