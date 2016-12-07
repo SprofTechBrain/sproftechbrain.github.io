@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="74" height="99" viewBox="0 0 74 99">
-	<defs>
-		<filter id="shadow" filterRes="222 297">
-			<feOffset in="SourceAlpha" dy="1" />
-			<feGaussianBlur stdDeviation="3" />
-			<feComponentTransfer>
-				<feFuncA type="linear" slope="0.6"/>
-			</feComponentTransfer>
-			<feBlend in="SourceGraphic" mode="normal" />
-		</filter>
-	</defs>
-	<g fill="#fff" filter="url(#shadow)" transform="translate(7,7)">
-		<path d="M47.018 3.136h-4.98l5.179 5.62v2.675H36.55V8.298h5.178l-5.178-5.62V0h10.468v3.136zm-12.583 0h-4.979l5.179 5.62v2.675H23.967V8.298h5.178l-5.178-5.62V0h10.468v3.136zm-12.459.127h-5.374v4.904h5.374v3.263h-9.192V0h9.192v3.263zM0 16.648l5.46 61.244 24.502 6.802 24.571-6.812L60 16.648H0zm45.418 50.257l-15.399 4.268-15.395-4.268-1.052-11.793h7.54l.535 5.99 8.373 2.256 8.377-2.261.876-9.742-17.508.002h-.025l-.672-7.511 18.872-.001.686-7.692H11.883l-.673-7.511h37.625l-3.417 38.263z"/>
-	</g>
+  <defs>
+    <filter id="shadow" filterRes="222 297">
+      <feOffset in="SourceAlpha" dy="1" />
+      <feGaussianBlur stdDeviation="3" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="normal" />
+    </filter>
+  </defs>
+  <g fill="#fff" filter="url(#shadow)" transform="translate(7,7)">
+    <path d="M47.018 3.136h-4.98l5.179 5.62v2.675H36.55V8.298h5.178l-5.178-5.62V0h10.468v3.136zm-12.583 0h-4.979l5.179 5.62v2.675H23.967V8.298h5.178l-5.178-5.62V0h10.468v3.136zm-12.459.127h-5.374v4.904h5.374v3.263h-9.192V0h9.192v3.263zM0 16.648l5.46 61.244 24.502 6.802 24.571-6.812L60 16.648H0zm45.418 50.257l-15.399 4.268-15.395-4.268-1.052-11.793h7.54l.535 5.99 8.373 2.256 8.377-2.261.876-9.742-17.508.002h-.025l-.672-7.511 18.872-.001.686-7.692H11.883l-.673-7.511h37.625l-3.417 38.263z"/>
+  </g>
 </svg>

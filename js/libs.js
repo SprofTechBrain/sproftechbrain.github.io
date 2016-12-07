@@ -9,7 +9,7 @@
  * Number.isNaN polyfill
  */
 if (!('isNaN' in Number)) {
-	Number.isNaN = function(value) {
-		return typeof value === "number" && isNaN(value);
-	}
+  Number.isNaN = function(value) {
+    return typeof value === "number" && isNaN(value);
+  }
 }
