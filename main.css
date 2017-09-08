@@ -191,7 +191,7 @@ address {
 .icon {
   display: inline-block;
   overflow: hidden;
-  background: url("/images/icons-sprite.png") no-repeat;
+  background: url("images/icons-sprite.png") no-repeat;
   text-indent: -9999px;
   vertical-align: middle;
 }
@@ -373,7 +373,7 @@ address {
 .section-header {
   padding: 0;
   color: #fff;
-  background: #1d1d1d url("/images/bg/header/narrow-700w.jpg") no-repeat center center;
+  background: #1d1d1d url("images/bg/header/narrow-700w.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
 }
@@ -473,7 +473,7 @@ address {
 /* 700 / 16 = 43.75 */
 @media (min-width: 43.75rem) {
   .section-header {
-    background-image: url("/images/bg/header/wide-1200w.jpg");
+    background-image: url("images/bg/header/wide-1200w.jpg");
   }
 
   .section-header-logo {
@@ -504,7 +504,7 @@ address {
 /* 1200 / 16 = 75 */
 @media (min-width: 75rem) {
   .section-header {
-    background-image: url("/images/bg/header/very-wide-1700w.jpg");
+    background-image: url("images/bg/header/very-wide-1700w.jpg");
   }
 }
 
@@ -590,7 +590,7 @@ address {
   height: 48px;
   float: right;
   margin: 0 0 0.75rem 0.75rem;
-  background: url('/images/icons-sprite.png') no-repeat;
+  background: url('images/icons-sprite.png') no-repeat;
   background-size: 154px;
 }
 
@@ -788,7 +788,7 @@ address {
 
 .section-technologies {
   color: #fff;
-  background: #3a93c9 url("/images/bg/technologies/narrow-1000w.jpg") no-repeat 50% 30%;
+  background: #3a93c9 url("images/bg/technologies/narrow-1000w.jpg") no-repeat 50% 30%;
   background-size: cover;
 }
 
@@ -799,7 +799,7 @@ address {
 /* 700 / 16 = 43.75 */
 @media (min-width: 43.75rem) {
   .section-technologies {
-    background-image: url("/images/bg/technologies/wide-1200w.jpg");
+    background-image: url("images/bg/technologies/wide-1200w.jpg");
   }
 }
 
